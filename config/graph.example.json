@@ -1,0 +1,7 @@
+{
+  "_note": "Copy to config/graph.json (gitignored). Azure app registration needs Mail.Send application permission + admin consent. Sender must be a mailbox the app can SendAs.",
+  "tenant_id": "00000000-0000-0000-0000-000000000000",
+  "client_id": "00000000-0000-0000-0000-000000000000",
+  "client_secret": "",
+  "sender": "news@contoso.com"
+}

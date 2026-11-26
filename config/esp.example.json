@@ -1,0 +1,40 @@
+{
+  "_comment": "Free-tier ESP accounts. Copy to config/esp.json and fill. From must be the address you verified at the provider, otherwise the API returns 400/401. No domain is needed for provider.domain_required=false.",
+  "pace_ms": 400,
+  "accounts": [
+    {
+      "id": "brevo-1",
+      "provider": "brevo",
+      "api_key": "xkeysib-REPLACE",
+      "from": "you@gmail.com",
+      "name": "Your Name",
+      "reply_to": "you@gmail.com",
+      "daily_limit": 300
+    },
+    {
+      "id": "sendgrid-1",
+      "provider": "sendgrid",
+      "api_key": "SG.REPLACE",
+      "from": "you@gmail.com",
+      "name": "Your Name",
+      "daily_limit": 100
+    },
+    {
+      "id": "mailjet-1",
+      "provider": "mailjet",
+      "api_key": "REPLACE_PUBLIC_KEY",
+      "secret": "REPLACE_PRIVATE_KEY",
+      "from": "you@gmail.com",
+      "name": "Your Name",
+      "daily_limit": 200
+    },
+    {
+      "id": "smtp2go-1",
+      "provider": "smtp2go",
+      "api_key": "api-REPLACE",
+      "from": "you@gmail.com",
+      "name": "Your Name",
+      "daily_limit": 33
+    }
+  ]
+}

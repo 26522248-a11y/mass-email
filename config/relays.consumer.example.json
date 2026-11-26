@@ -1,0 +1,37 @@
+{
+  "_note": "Copy to relays.json. Consumer mailboxes are for low-volume, opt-in sending only. From must be the authenticated account or a verified alias. Check each provider's bulk policy before using for marketing.",
+  "relays": [
+    {
+      "id": "gmail-consumer-1",
+      "kind": "gmail",
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "secure": false,
+      "user": "youraccount@gmail.com",
+      "pass": "16-char-app-password",
+      "from": "youraccount@gmail.com",
+      "domain": "gmail.com",
+      "return_path": "youraccount@gmail.com",
+      "weight": 1,
+      "max_per_hour": 40,
+      "max_per_day": 450,
+      "max_concurrent": 1
+    },
+    {
+      "id": "outlook-consumer-1",
+      "kind": "outlook",
+      "host": "smtp-mail.outlook.com",
+      "port": 587,
+      "secure": false,
+      "user": "youraccount@outlook.com",
+      "pass": "app-password",
+      "from": "youraccount@outlook.com",
+      "domain": "outlook.com",
+      "return_path": "youraccount@outlook.com",
+      "weight": 1,
+      "max_per_hour": 30,
+      "max_per_day": 280,
+      "max_concurrent": 1
+    }
+  ]
+}

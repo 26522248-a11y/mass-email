@@ -1,0 +1,43 @@
+{
+  "project": "mass-email",
+  "from_name": "Your Brand",
+  "from_address": "news@mail.example.com",
+  "from_domain": "mail.example.com",
+  "sending_ips": [],
+  "send_path": "relay",
+  "direct_domains": ["gmail.com", "googlemail.com"],
+  "direct_envelope_from": "",
+  "reply_to": "support@example.com",
+  "return_path_domain": "bounce.example.com",
+  "unsubscribe_mailto": "unsub@mail.example.com",
+  "unsubscribe_url": "https://example.com/u/{token}",
+  "one_click_unsubscribe": true,
+  "helo_host": "mail.example.com",
+  "dkim_selector": "s1",
+  "subject": "{Hi|Hey|Hello} {{name}} - {quick|short} update",
+  "headers": {
+    "X-Entity-Ref-ID": true,
+    "Feedback-ID": "campaign:news:example"
+  },
+  "pacing": {
+    "per_relay_concurrency": 4,
+    "min_gap_ms": 250,
+    "max_gap_ms": 1200,
+    "jitter": true,
+    "batch_size": 200,
+    "batch_pause_ms_min": 45000,
+    "batch_pause_ms_max": 180000
+  },
+  "retry": {
+    "max_attempts": 5,
+    "schedule_seconds": [60, 300, 1800, 7200, 21600],
+    "throttle_cooldown_seconds": 900
+  },
+  "verify": {
+    "helo_host": "verify.example.com",
+    "mail_from": "verify@example.com",
+    "concurrency": 8,
+    "catch_all_probes": 2
+  },
+  "spamscore": { "fail_over": 5.0, "warn_over": 2.5 }
+}

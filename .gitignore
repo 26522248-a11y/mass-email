@@ -1,0 +1,25 @@
+# secrets & local state
+config/relays.json
+config/proxy.json
+config/graph.json
+config/esp.json
+keys/*.json
+keys/*.pub
+state/pool.json
+state/esp.json
+state/graph-device.json
+data/queue/
+logs/*.log
+logs/*.jsonl
+reports/*
+node_modules/
+.env
+.env.*
+*.log
+
+# keep structure and docs
+!keys/README.md
+!reports/.gitkeep
+!data/.gitkeep
+!state/.gitkeep
+!logs/.gitkeep

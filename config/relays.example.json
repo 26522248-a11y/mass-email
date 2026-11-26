@@ -1,0 +1,51 @@
+{
+  "_comment": "Copy to relays.json. host/port/user/pass per relay account. weight = relative share. max_per_hour/max_per_day = your contractual or safe ceiling, not the provider's absolute limit.",
+  "relays": [
+    {
+      "id": "ses-1",
+      "kind": "ses",
+      "host": "email-smtp.us-east-1.amazonaws.com",
+      "port": 587,
+      "secure": false,
+      "user": "AKIA...",
+      "pass": "BASE64_SMTP_PASSWORD",
+      "from": "news@mail.example.com",
+      "domain": "mail.example.com",
+      "weight": 10,
+      "max_per_hour": 800,
+      "max_per_day": 12000,
+      "max_concurrent": 8
+    },
+    {
+      "id": "gmail-ws-1",
+      "kind": "gmail",
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "secure": false,
+      "user": "sender1@example.com",
+      "pass": "app-password-16-chars",
+      "from": "news@mail.example.com",
+      "domain": "mail.example.com",
+      "weight": 2,
+      "max_per_hour": 150,
+      "max_per_day": 900,
+      "max_concurrent": 2
+    },
+    {
+      "id": "outlook-1",
+      "kind": "outlook",
+      "host": "smtp.office365.com",
+      "port": 587,
+      "secure": false,
+      "user": "sender1@example.onmicrosoft.com",
+      "pass": "app-password",
+      "auth": "PLAIN",
+      "from": "news@mail.example.com",
+      "domain": "mail.example.com",
+      "weight": 1,
+      "max_per_hour": 80,
+      "max_per_day": 400,
+      "max_concurrent": 2
+    }
+  ]
+}

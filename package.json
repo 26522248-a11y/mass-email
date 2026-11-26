@@ -1,0 +1,19 @@
+{
+  "name": "mass-email",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "High-deliverability multi-relay bulk mail engine + receiver vulnerability probe kit (zero dependencies)",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "cli": "node src/cli.js",
+    "test": "node tests/run.mjs",
+    "keys": "node src/cli.js keys",
+    "dns": "node src/cli.js dnscheck",
+    "probe": "node src/cli.js probe",
+    "warmup": "node src/cli.js warmup",
+    "pool": "node src/cli.js pool",
+    "esp": "node src/cli.js espprobe",
+    "accept": "node tests/accept-matrix.mjs"
+  }
+}

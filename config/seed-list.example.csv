@@ -1,0 +1,8 @@
+email,name,provider
+seed-gmail-primary@yourdomain.tld,Gmail Primary,gmail
+seed-gmail-promo@yourdomain.tld,Gmail Promotions,gmail
+seed-outlook-focused@yourdomain.tld,Outlook Focused,outlook
+seed-outlook-other@yourdomain.tld,Outlook Other,outlook
+seed-yahoo@yourdomain.tld,Yahoo,yahoo
+seed-proton@yourdomain.tld,Proton,proton
+seed-icloud@yourdomain.tld,iCloud,icloud

@@ -1,0 +1,10 @@
+{Hi|Hey|Hello} {{name}},
+
+{Quick|Short} note: {we shipped|we released} the {thing|update} you asked about.
+
+{Read it here|See the details}: {{url}}
+
+--
+{{brand}}
+{You are receiving this because you signed up at {{domain}}.|Sent to {{email}} because you opted in at {{domain}}.}
+{Unsubscribe|Opt out}: {{unsubscribe}}

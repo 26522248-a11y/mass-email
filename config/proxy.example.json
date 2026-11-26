@@ -1,0 +1,8 @@
+{
+  "_note": "Copy to config/proxy.json (gitignored) and fill credentials. Only HTTPS APIs work on residential plans; SMTP ports are blocked.",
+  "host": "pr.oxylabs.io",
+  "http_port": 7777,
+  "socks_port": 10000,
+  "user": "",
+  "pass": ""
+}
